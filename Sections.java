@@ -18,6 +18,8 @@ public class Sections{
     public boolean getCheckpoint(){
 	return checkPoint;
     }
+    public String editOption(int num){
+	}
     public void setCheckpoint(){}
     public boolean isCheckpoint(boolean check){}
 }
