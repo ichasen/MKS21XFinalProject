@@ -10,7 +10,9 @@ public class Story{
 
     public Story(){
 	setIntro();
+	setEnding();
 	getIntro();
+	getEnding();
     }
     public void setIntro(){
 	System.out.println("Enter the introduction to your story: ");
