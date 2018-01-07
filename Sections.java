@@ -4,8 +4,6 @@ public class Sections{
     boolean checkPoint;
     int numOfOptions;
     public Sections(){}
-    public void background(){}
-    public void ending(){}
     public void setNumOfOptions(int newNum){
 	numOfOptions = newNum;
     }
@@ -15,12 +13,11 @@ public class Sections{
     public String getScene(){
 	return scene;
     }
-    public boolean getCheckpoint(){
+    public boolean isCheckpoint(){
 	return checkPoint;
     }
     public String editOption(int num){
 	}
     public void setCheckpoint(){}
-    public boolean isCheckpoint(boolean check){}
 }
     
