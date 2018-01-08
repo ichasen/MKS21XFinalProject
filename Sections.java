@@ -17,7 +17,7 @@ public class Sections{
 	numOfOptions = numberReader.nextInt();
     }
     public void getOptions(){
-	System.out.print(numOfOptions);
+	System.out.println(numOfOptions);
     }
     public String getScene(){
 	return scene;

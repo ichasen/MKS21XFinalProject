@@ -19,7 +19,7 @@ public class Story{
 	Intro=stringReader.nextLine();//set intro that what the user typed in
     }
     public void getIntro(){
-	System.out.print(Intro);
+	System.out.println(Intro);
     }
     public void setEnding(){
 	System.out.println("How do you want your story to end?: ");
