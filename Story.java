@@ -19,14 +19,14 @@ public class Story{
 	Intro=stringReader.nextLine();//set intro that what the user typed in
     }
     public void getIntro(){
-	System.out.println(Intro);
+	System.out.println("Intro:" + Intro);
     }
     public void setEnding(){
 	System.out.println("How do you want your story to end?: ");
 	ending=stringReader.nextLine();//set ending to what the user typed in
     }
     public void getEnding(){
-	System.out.println(ending);
+	System.out.println("Ending:"+ending);
     }
     public void saveStory(String fileName){}
     public String getFileSave(){

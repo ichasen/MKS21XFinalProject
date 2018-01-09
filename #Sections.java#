@@ -26,7 +26,10 @@ public class Sections{
 	return checkPoint;
     }
     public String setOption(int num){
-    	}
+	while (numOfOptions > 0 && numOfOptions < 10){
+	
+	}
+    }
     public void setCheckpoint(){}
     public static void main(String[] args){
 	new Sections();
