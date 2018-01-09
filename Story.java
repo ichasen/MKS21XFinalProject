@@ -7,6 +7,7 @@ public class Story{
     String fileSave;
     String Intro;
     String ending;
+    int numScenes;
 
     public Story(){
 	setIntro();
@@ -19,7 +20,7 @@ public class Story{
 	Intro=stringReader.nextLine();//set intro that what the user typed in
     }
     public void getIntro(){
-	System.out.println("Intro:" + Intro);
+	System.out.println("Intro: " + Intro);
     }
     public void setEnding(){
 	System.out.println("How do you want your story to end?: ");
