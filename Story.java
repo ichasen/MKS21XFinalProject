@@ -29,7 +29,11 @@ public class Story{
     public void getEnding(){
 	System.out.println("Ending:"+ending);
     }
-    public void saveStory(String fileName){}
+    public void saveStory(File fileSave){
+	if (!(fileSave.exists())){
+	    throw new FileNotFoundException;
+	}
+    }
     public String getFileSave(){
 	return fileSave;
     }
