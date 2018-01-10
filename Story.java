@@ -37,6 +37,18 @@ public class Story{
     //	    throw new FileNotFoundException;
     //	}
     //  }
+    public void saveStory(File fileSave){
+	if (!(fileSave.exists())){
+	    throw new FileNotFoundException;
+	}
+    }
+
+    public void saveStory(){
+	if (!(fileSave.exists())){
+	    throw new FileNotFoundException();
+	}
+    }
+
     public String getFileSave(){
 	return fileSave;
     }
