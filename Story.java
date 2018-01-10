@@ -13,14 +13,13 @@ public class Story{
     public Story(){
 	setIntro();
 	setEnding();
-	setNumOfOptions();
-	getOptions();
 	getIntro();
 	getEnding();
     }
     public void setIntro(){
 	System.out.println("Enter the introduction to your story: ");
 	Intro=stringReader.nextLine();//set intro that what the user typed in
+	setNumOfOptions();
     }
     public void getIntro(){
 	System.out.println("Intro: " + Intro);
@@ -37,18 +36,18 @@ public class Story{
     //	    throw new FileNotFoundException;
     //	}
     //  }
-    public void saveStory(File fileSave){
-	if (!(fileSave.exists())){
-	    throw new FileNotFoundException;
-	}
-    }
+    // public void saveStory(File fileSave){
+    //	if (!(fileSave.exists())){
+    //	    throw new FileNotFoundException;
+    //	}
+    // }
 
-    public void saveStory(){
-	if (!(fileSave.exists())){
-	    throw new FileNotFoundException();
-	}
-    }
-
+    //  public void saveStory(){
+    //	if (!(fileSave.exists())){
+    //	    throw new FileNotFoundException();
+    //	}
+    //}
+    
     public String getFileSave(){
 	return fileSave;
     }
@@ -61,5 +60,8 @@ public class Story{
     }
     public static void main(String[] args){
 	new Story();
+    }
+    public void Section1(){
+
     }
 }
