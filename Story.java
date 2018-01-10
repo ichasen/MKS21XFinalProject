@@ -27,13 +27,20 @@ public class Story{
 	ending=stringReader.nextLine();//set ending to what the user typed in
     }
     public void getEnding(){
-	System.out.println("Ending: " + ending);
+	System.out.println("Ending:"+ending);
     }
+    public void saveStory(File fileSave){
+	if (!(fileSave.exists())){
+	    throw new FileNotFoundException;
+	}
+    }
+
     public void saveStory(){
 	if (!(fileSave.exists())){
 	    throw new FileNotFoundException();
 	}
     }
+
     public String getFileSave(){
 	return fileSave;
     }
