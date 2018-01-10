@@ -20,11 +20,12 @@ public class Story{
 	System.out.println("Enter the introduction to your story: ");
 	Intro=stringReader.nextLine();//set intro that what the user typed in
 	System.out.println("Enter the number of options you want for this section up to a maximum of 3");
-	if (numOfOptions > 3 && numOfOptions < 0){
+	numOfOptions = numberReader.nextInt();
+	if (numOfOptions > 3 || numOfOptions < 0){
 	     throw new IllegalArgumentException("Please use a number less than 3");
 	}
-	else {
-	    numOfOptions = numberReader.nextInt();
+	else{
+	    System.out.println ("You will now have " + numOfOptions + " options to complete this section!");
 	}
     }
     public void getIntro(){
