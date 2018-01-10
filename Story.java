@@ -8,10 +8,13 @@ public class Story{
     String Intro;
     String ending;
     int numScenes;
+    int numOfOptions;
 
     public Story(){
 	setIntro();
 	setEnding();
+	setNumOfOptions();
+	getOptions();
 	getIntro();
 	getEnding();
     }
@@ -29,13 +32,20 @@ public class Story{
     public void getEnding(){
 	System.out.println("Ending:"+ending);
     }
-    public void saveStory(File fileSave){
-	if (!(fileSave.exists())){
-	    throw new FileNotFoundException;
-	}
-    }
+    // public void saveStory(File fileSave){
+    //if (!(fileSave.exists())){
+    //	    throw new FileNotFoundException;
+    //	}
+    //  }
     public String getFileSave(){
 	return fileSave;
+    }
+    public void setNumOfOptions(){
+	System.out.println("Enter the number of options you want for this section");
+	numOfOptions = numberReader.nextInt();
+    }
+    public void getOptions(){
+	System.out.println(numOfOptions);
     }
     public static void main(String[] args){
 	new Story();
