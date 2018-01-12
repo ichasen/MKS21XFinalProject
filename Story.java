@@ -99,16 +99,29 @@ public class Story{
 	System.out.println("Enter the story for this section");
 	one=stringReader.nextLine();
     }
-
-    }
-    public static void main(String[] args){
-	new Story();
-    }
-    public void Section1(){
-	System.out.println("Enter the story for this section");
-	one=stringReader.nextLine();
-    }
-
     public void Section2(){
+	System.out.println("Enter the story for this section");
+	two=stringReader.nextLine();
     }
+    public void Section3(){
+	System.out.println("Enter the story for this section");
+	two=stringReader.nextLine();
+    }
+    public void Section4(){
+	System.out.println("Enter the story for this section");
+	three=stringReader.nextLine();
+    }
+    public void Section5(){
+	System.out.println("Enter the story for this section");
+	three=stringReader.nextLine();
+    }
+    public void Section6(){
+	System.out.println("Enter the story for this section");
+	three=stringReader.nextLine();
+    }
+    public void Section7(){
+	System.out.println("Enter the story for this section");
+	three=stringReader.nextLine();
+    }
+
 }
