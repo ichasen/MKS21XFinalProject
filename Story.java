@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 public class Story{
 
@@ -91,6 +90,7 @@ public class Story{
     public void getOptions(){
 	System.out.println("Option 1:" + one);
 	System.out.println("Option 2:" + two);
+
     }
     public static void main(String[] args){
 	new Story();
@@ -99,7 +99,16 @@ public class Story{
 	System.out.println("Enter the story for this section");
 	one=stringReader.nextLine();
     }
+
+    }
+    public static void main(String[] args){
+	new Story();
+    }
+    public void Section1(){
+	System.out.println("Enter the story for this section");
+	one=stringReader.nextLine();
+    }
+
     public void Section2(){
     }
 }
-
