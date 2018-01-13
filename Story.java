@@ -10,13 +10,13 @@ public class Story{
     int numScenes;
     String one,two,three;
     String run;
-    String ans1,ans2,ans3;
+    String ans1,ans2;
 
     public Story(){
 	setIntro();
+	Section1();
+	Section2();
 	setEnding();
-	getIntro();
-	getOptions();
 	getEnding();
     }
     public void setIntro(){
@@ -24,7 +24,8 @@ public class Story{
 	Intro=stringReader.nextLine();//set intro that what the user typed in
 	System.out.println ("You will  have 2  options for each section!");
 	setOptions();
-	selectOptions();
+	System.out.println("Intro Options:");
+	getOptions();
     }
 
     public void selectOptions(){
@@ -41,8 +42,6 @@ public class Story{
   
   
     public void setOptions(){
-	getIntro();
-	System.out.println("Please enter in the options");
 	System.out.println("Please enter in option 1");
 	one = stringReader.nextLine();
 	System.out.println(">Option 1:" + one);
@@ -88,40 +87,67 @@ public class Story{
     //	numOfOptions = numberReader.nextInt();
     // }
     public void getOptions(){
-	System.out.println("Option 1:" + one);
-	System.out.println("Option 2:" + two);
+	System.out.println(">>>>Option 1:" + one);
+	System.out.println(">>>>Option 2:" + two);
 
     }
     public static void main(String[] args){
 	new Story();
     }
     public void Section1(){
-	System.out.println("Enter the story for this section");
+	System.out.println("Section 1:Enter the story for this section");
 	one=stringReader.nextLine();
+	setOptions();
+	System.out.println("Section 1 Options:");
+	getOptions();
     }
     public void Section2(){
-	System.out.println("Enter the story for this section");
+	System.out.println("Section 2:Enter the story for this section");
 	two=stringReader.nextLine();
+	setOptions();
+	System.out.println("Section 2 Options:");
+	getOptions();
     }
     public void Section3(){
-	System.out.println("Enter the story for this section");
-	two=stringReader.nextLine();
+	System.out.println("Section 3:Enter the story for this section");
+	one=stringReader.nextLine();
+	setOptions();
+	System.out.println("Section 3 Options:");
+	getOptions();
     }
     public void Section4(){
-	System.out.println("Enter the story for this section");
-	three=stringReader.nextLine();
+	System.out.println("Section 4:Enter the story for this section");
+	two=stringReader.nextLine();
+	setOptions();
+	System.out.println("Section 4 Options:");
+	getOptions();
     }
     public void Section5(){
-	System.out.println("Enter the story for this section");
-	three=stringReader.nextLine();
+	System.out.println("Section 5:Enter the story for this section");
+	one=stringReader.nextLine();
+	setOptions();
+	System.out.println("Section 5 Options:");
+	getOptions();
     }
     public void Section6(){
-	System.out.println("Enter the story for this section");
-	three=stringReader.nextLine();
+	System.out.println("Section 6:Enter the story for this section");
+	two=stringReader.nextLine();
+	setOptions();
+	System.out.println("Section 6 Options:");
+	getOptions();
     }
     public void Section7(){
-	System.out.println("Enter the story for this section");
-	three=stringReader.nextLine();
+	System.out.println("Section 7:Enter the story for this section");
+	one=stringReader.nextLine();
+	setOptions();
+	System.out.println("Section 7 Options:");
+	getOptions();
     }
-
+    public void Section8(){
+	System.out.println("Section 8:Enter the story for this section");
+	two=stringReader.nextLine();
+	setOptions();
+	System.out.println("Section 8 Options:");
+	getOptions();
+    }
 }
