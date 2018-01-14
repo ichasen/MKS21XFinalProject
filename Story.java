@@ -8,7 +8,7 @@ public class Story{
     String Intro;
     String ending;
     int numScenes;
-    String one,two,three;
+    String one,two;
     String run;
     String ans1,ans2;
 
@@ -16,8 +16,14 @@ public class Story{
 	setIntro();
 	Section1();
 	Section2();
-	setEnding();
-	getEnding();
+	Section3();
+	Section4();
+	Section5();
+	Section6();
+	Section7();
+	Section8();
+	Section9();
+	Section10();
     }
     public void setIntro(){
 	System.out.println("Enter the introduction to your story: ");
@@ -56,7 +62,7 @@ public class Story{
 	System.out.println("Intro: " + Intro);
     }
     public void setEnding(){
-	System.out.println("How do you want your story to end?: ");
+	System.out.println("How do you want your story to end from this result?");
 	ending=stringReader.nextLine();//set ending to what the user typed in
     }
     public void getEnding(){
@@ -142,6 +148,8 @@ public class Story{
 	setOptions();
 	System.out.println("Section 7 Options:");
 	getOptions();
+	setEnding();
+	getEnding();
     }
     public void Section8(){
 	System.out.println("Section 8:Enter the story for this section");
@@ -149,5 +157,26 @@ public class Story{
 	setOptions();
 	System.out.println("Section 8 Options:");
 	getOptions();
+	setEnding();
+	getEnding();
     }
+    public void Section9(){
+	System.out.println("Section 9:Enter the story for this section");
+	two=stringReader.nextLine();
+	setOptions();
+	System.out.println("Section 9 Options:");
+	getOptions();
+	setEnding();
+	getEnding();
+    }
+    public void Section10(){
+	System.out.println("Section 10:Enter the story for this section");
+	two=stringReader.nextLine();
+	setOptions();
+	System.out.println("Section 10 Options:");
+	getOptions();
+	setEnding();
+	getEnding();
+    }
+
 }
