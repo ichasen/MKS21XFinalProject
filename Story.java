@@ -325,7 +325,8 @@ public class Story{
 
   }
   public static void main(String[] args){
-    new Story();
+    Story example = new Story();
+    System.out.println(example);
   }
   public void Section1(){
     System.out.println("Section 1:Now enter the story for this section based on option 1 of your intro: ");
