@@ -22,18 +22,25 @@ public class Story{
     setOptions(1);
     Section2();
     setOptions(2);
-    Section7();
-    setOptions(7);
-    Section8();
-    setOptions(8);
+    Section3();
+    setOptions(3);
+    Section4();
+    setOptions(4);
+    //   Section7();
+    //    setOptions(7);
+    //   Section8();
+    //   setOptions(8);
     //   Section5();
     //  setOptions(5);
     //  Section6();
-    //  setOptions(6);    
+    //  setOptions(6);
+    getSections();
   }
-  public String getSections(){
-    String ans = selectOptions(0)+ selectOptions(1)+ selectOptions(2) + selectOptions(3) + selectOptions(4) + selectOptions(5) + selectOptions(6);
-    return ans;
+  public void getSections(){
+    System.out.println(Intro);
+    System.out.println(selectOptions(0));
+    System.out.println(selectOptions(1));
+    
   }
   public void setIntro(){
     System.out.println("How do you want to begin your story?: ");
@@ -47,58 +54,58 @@ public class Story{
     ArrayList<String> s1 = new ArrayList<>();
     if (section == 0){
 	    if (run.equalsIgnoreCase("one")){
-        Section1();
-	    }
+        return sec1;
+      }
 	    else if(run.equalsIgnoreCase("two")){
-        Section2();
-	    }
+        return sec2;
+      }
     }
     if (section == 1){
 	    if (run.equalsIgnoreCase("one")){
-        Section3();
-	    }
+        return sec3;
+      }
 	    else if(run.equalsIgnoreCase("two")){
-        Section4();
-	    }
+        return sec4;
+      }
     }
     if (section == 2){
 	    if (run.equalsIgnoreCase("one")){
-        Section5();
-	    }
+        return sec5;
+      }
 	    else if(run.equalsIgnoreCase("two")){
-        Section6();
+        return sec6;
 	    }
     }
     if (section == 3){
 	    if (run.equalsIgnoreCase("one")){
-        Section7();
+        return sec7;
 	    }
 	    else if(run.equalsIgnoreCase("two")){
-        Section8();
-	    }
+        return sec8;
+      }
     }
     if (section == 4){
 	    if (run.equalsIgnoreCase("one")){
-        Section9();
-	    }
+        return sec9;
+      }
 	    else if(run.equalsIgnoreCase("two")){
-        Section10();
-	    }
+        return sec10;
+      }
     }
     if (section == 5){
 	    if (run.equalsIgnoreCase("one")){
-        Section11();
+        return sec11;
 	    }
 	    else if(run.equalsIgnoreCase("two")){
-        Section12();
-	    }
+        return sec12;
+      }
     }
     if (section == 6){
 	    if (run.equalsIgnoreCase("one")){
-        Section13();
-	    }
+        return sec13;
+      }
 	    else if(run.equalsIgnoreCase("two")){
-        Section14();
+        return sec14;
 	    }
     }
     return "option selected";
