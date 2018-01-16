@@ -54,57 +54,71 @@ public class Story{
     ArrayList<String> s1 = new ArrayList<>();
     if (section == 0){
 	    if (run.equalsIgnoreCase("one")){
+		Section1();
         return sec1;
       }
 	    else if(run.equalsIgnoreCase("two")){
+		Section2();
         return sec2;
       }
     }
     if (section == 1){
 	    if (run.equalsIgnoreCase("one")){
+		Section3();
         return sec3;
       }
 	    else if(run.equalsIgnoreCase("two")){
+		Section4();
         return sec4;
       }
     }
     if (section == 2){
 	    if (run.equalsIgnoreCase("one")){
+		Section5();
         return sec5;
       }
 	    else if(run.equalsIgnoreCase("two")){
+		Section6();
         return sec6;
 	    }
     }
     if (section == 3){
 	    if (run.equalsIgnoreCase("one")){
+		Section7();
         return sec7;
 	    }
 	    else if(run.equalsIgnoreCase("two")){
+		Section8();
         return sec8;
       }
     }
     if (section == 4){
 	    if (run.equalsIgnoreCase("one")){
+		Section9();
         return sec9;
       }
 	    else if(run.equalsIgnoreCase("two")){
+		Section10();
         return sec10;
       }
     }
     if (section == 5){
 	    if (run.equalsIgnoreCase("one")){
+		Section11();
         return sec11;
 	    }
 	    else if(run.equalsIgnoreCase("two")){
+		Section12();
         return sec12;
       }
     }
     if (section == 6){
 	    if (run.equalsIgnoreCase("one")){
+		Section13();
         return sec13;
       }
 	    else if(run.equalsIgnoreCase("two")){
+		Section14();
         return sec14;
 	    }
     }
