@@ -11,7 +11,7 @@ public class Story{
     int numScenes;
     String one,two;
     String run;
-  String run2;
+    String run2;
     String ans1,ans2;
     String sec1, sec2, sec3, sec4, sec5, sec6, sec7, sec8, sec9, sec10, sec11, sec12, sec13, sec14;
 
