@@ -41,12 +41,16 @@ public class Story{
     System.out.println(Intro);
     System.out.println(selectOptions(0));
     System.out.println(selectOptions(1));
-    
+    System.out.println(selectOptions(2));
+    System.out.println(selectOptions(3));
+    System.out.println(selectOptions(4));
+    System.out.println(selectOptions(5));
+    System.out.println(selectOptions(6));
   }
   public void setIntro(){
     System.out.println("How do you want to begin your story?: ");
     Intro=stringReader.nextLine();//set intro that what the user typed in
-    System.out.println ("You will  have 2  options for each section to decide how your story will continue.");
+    System.out.println ("\nYou will  have 2  options for each section to decide how your story will continue.");
   }
 
   public String selectOptions(int section){
@@ -114,172 +118,173 @@ public class Story{
   
   public String setOptions(int sect){
     if (sect == 0){
-      System.out.println("Enter in the options for each section");
+      System.out.println("Enter in the options for each section\n");
       System.out.println("Please enter in option 1");
       one = stringReader.nextLine();
       System.out.println(">Option 1:" + one);
-      System.out.println("Please enter in option 2");
+      System.out.println("\nPlease enter in option 2");
       two = stringReader.nextLine();
       System.out.println(">Option 2:" + two);
-      System.out.println("Intro Options:");
+      System.out.println("\nIntro Options:");
       getOptions();
     }
     if (sect == 1){
-      System.out.println("Please enter in option 1");
+      System.out.println("\nPlease enter in option 1");
       one = stringReader.nextLine();
       System.out.println(">Option 1:" + one);
-      System.out.println("Please enter in option 2");
+      System.out.println("\nPlease enter in option 2");
       two = stringReader.nextLine();
       System.out.println(">Option 2:" + two);
-      System.out.println("Section 1 Options:");
+      System.out.println("\nSection 1 Options:");
       getOptions();
     }if (sect == 2){
-      System.out.println("Please enter in option 1");
+      System.out.println("\nPlease enter in option 1");
       one = stringReader.nextLine();
       System.out.println(">Option 1:" + one);
-      System.out.println("Please enter in option 2");
+      System.out.println("\nPlease enter in option 2");
       two = stringReader.nextLine();
       System.out.println(">Option 2:" + two);
-      System.out.println("Section 2 Options:");
+      System.out.println("\nSection 2 Options:");
       getOptions();
     }if (sect == 3){
-      System.out.println("Please enter in option 1");
+      System.out.println("\nPlease enter in option 1");
       one = stringReader.nextLine();
       System.out.println(">Option 1:" + one);
-      System.out.println("Please enter in option 2");
+      System.out.println("\nPlease enter in option 2");
       two = stringReader.nextLine();
       System.out.println(">Option 2:" + two);
-      System.out.println("Section 3 Options:");
+      System.out.println("\nSection 3 Options:");
       getOptions();
     }if (sect == 4){
-      System.out.println("Please enter in option 1");
+      System.out.println("\nPlease enter in option 1");
       one = stringReader.nextLine();
       System.out.println(">Option 1:" + one);
-      System.out.println("Please enter in option 2");
+      System.out.println("\nPlease enter in option 2");
       two = stringReader.nextLine();
       System.out.println(">Option 2:" + two);
-      System.out.println("Section 4 Options:");
+      System.out.println("\nSection 4 Options:");
       getOptions();
     }if (sect == 5){
-      System.out.println("Please enter in option 1");
+      System.out.println("\nPlease enter in option 1");
       one = stringReader.nextLine();
       System.out.println(">Option 1:" + one);
-      System.out.println("Please enter in option 2");
+      System.out.println("\nPlease enter in option 2");
       two = stringReader.nextLine();
       System.out.println(">Option 2:" + two);
-      System.out.println("Section 5 Options:");  
+      System.out.println("\nSection 5 Options:");  
       getOptions();
     }if (sect == 6){
+      System.out.println("\nPlease enter in option 1");
       one = stringReader.nextLine();
       System.out.println(">Option 1:" + one);
-      System.out.println("Please enter in option 2");
+      System.out.println("\nPlease enter in option 2");
       two = stringReader.nextLine();
       System.out.println(">Option 2:" + two);
-      System.out.println("Section 6 Options:");
+      System.out.println("\nSection 6 Options:");
       getOptions();
     }if (sect == 7){
-      System.out.println("Please enter in option 1");
+      System.out.println("\nPlease enter in option 1");
       one = stringReader.nextLine();
       System.out.println(">Option 1:" + one);
       setEnding();
       getEnding();
-      System.out.println("Please enter in option 2");
+      System.out.println("\nPlease enter in option 2");
       two = stringReader.nextLine();
       System.out.println(">Option 2:" + two);
-      System.out.println("Section 7 Options:");
+      System.out.println("\nSection 7 Options:");
       getOptions();
       setEnding();
       getEnding();
     }if (sect == 8){
-      System.out.println("Please enter in option 1");
+      System.out.println("\nPlease enter in option 1");
       one = stringReader.nextLine();
       System.out.println(">Option 1:" + one);
       setEnding();
       getEnding();
-      System.out.println("Please enter in option 2");
+      System.out.println("\nPlease enter in option 2");
       two = stringReader.nextLine();
       System.out.println(">Option 2:" + two);
-      System.out.println("Section 8 Options:");
+      System.out.println("\nSection 8 Options:");
       getOptions();
       setEnding();
       getEnding();
     }if (sect == 9){
-      System.out.println("Please enter in option 1");
+      System.out.println("\nPlease enter in option 1");
       one = stringReader.nextLine();
       System.out.println(">Option 1:" + one);
       setEnding();
       getEnding();
-      System.out.println("Please enter in option 2");
+      System.out.println("\nPlease enter in option 2");
       two = stringReader.nextLine();
       System.out.println(">Option 2:" + two);
-      System.out.println("Section 9 Options:");
+      System.out.println("\nSection 9 Options:");
       getOptions();
       setEnding();
       getEnding();
     }if (sect == 10){
-      System.out.println("Please enter in option 1");
+      System.out.println("\nPlease enter in option 1");
       one = stringReader.nextLine();
       System.out.println(">Option 1:" + one);
       setEnding();
       getEnding();
-      System.out.println("Please enter in option 2");
+      System.out.println("\nPlease enter in option 2");
       two = stringReader.nextLine();
       System.out.println(">Option 2:" + two);
-      System.out.println("Section 10 Options:");
+      System.out.println("\nSection 10 Options:");
       getOptions();
       setEnding();
       getEnding();
     }if (sect == 11){
-      System.out.println("Please enter in option 1");
+      System.out.println("\nPlease enter in option 1");
       one = stringReader.nextLine();
       System.out.println(">Option 1:" + one);
       setEnding();
       getEnding();
-      System.out.println("Please enter in option 2");
+      System.out.println("\nPlease enter in option 2");
       two = stringReader.nextLine();
       System.out.println(">Option 2:" + two);
-      System.out.println("Section 11 Options:");
+      System.out.println("\nSection 11 Options:");
       getOptions();
       setEnding();
       getEnding();
     }if (sect == 12){
-      System.out.println("Please enter in option 1");
+      System.out.println("\nPlease enter in option 1");
       one = stringReader.nextLine();
       System.out.println(">Option 1:" + one);
       setEnding();
       getEnding();
-      System.out.println("Please enter in option 2");
+      System.out.println("\nPlease enter in option 2");
       two = stringReader.nextLine();
       System.out.println(">Option 2:" + two);
-      System.out.println("Section 12 Options:");
+      System.out.println("\nSection 12 Options:");
       getOptions();
       setEnding();
       getEnding();
     }if (sect == 13){
-      System.out.println("Please enter in option 1");
+      System.out.println("\nPlease enter in option 1");
       one = stringReader.nextLine();
       System.out.println(">Option 1:" + one);
       setEnding();
       getEnding();
-      System.out.println("Please enter in option 2");
+      System.out.println("\nPlease enter in option 2");
       setEnding();
       getEnding();
       two = stringReader.nextLine();
       System.out.println(">Option 2:" + two);
-      System.out.println("Section 13 Options:");
+      System.out.println("\nSection 13 Options:");
       getOptions();
       setEnding();
       getEnding();
     }if (sect == 14){
-      System.out.println("Please enter in option 1");
+      System.out.println("\nPlease enter in option 1");
       one = stringReader.nextLine();
       System.out.println(">Option 1:" + one);
       setEnding();
       getEnding();
-      System.out.println("Please enter in option 2");
+      System.out.println("\nPlease enter in option 2");
       two = stringReader.nextLine();
       System.out.println(">Option 2:" + two);
-      System.out.println("Section 14 Options:");
+      System.out.println("\nSection 14 Options:");
       getOptions();
       setEnding();
       getEnding();
@@ -330,59 +335,59 @@ public class Story{
     System.out.println(example);
   }
   public void Section1(){
-    System.out.println("Section 1:Now enter the story for this section based on option 1 of your intro: ");
+    System.out.println("\nSection 1:Now enter the story for this section based on option 1 of your intro: ");
     sec1 = stringReader.nextLine();
   }
   public void Section2(){
-    System.out.println("Section 2:Now enter the story for the next section based on option 2 of your intro: ");
+    System.out.println("\nSection 2:Now enter the story for the next section based on option 2 of your intro: ");
     sec2 = stringReader.nextLine();
   }
   public void Section3(){
-    System.out.println("Section 3:Enter the story for this section based on option 1 of Section 1: ");
+    System.out.println("\nSection 3:Enter the story for this section based on option 1 of Section 1: ");
     sec3 = stringReader.nextLine();
   }
   public void Section4(){
-    System.out.println("Section 4:Enter the story for this section based on option 2 of Section 1:");
+    System.out.println("\nSection 4:Enter the story for this section based on option 2 of Section 1:");
     sec4 = stringReader.nextLine();
   }
   public void Section5(){
-    System.out.println("Section 5:Enter the story for this section based on option 1 of Section 2:");
+    System.out.println("\nSection 5:Enter the story for this section based on option 1 of Section 2:");
     sec5 = stringReader.nextLine();
   }
   public void Section6(){
-    System.out.println("Section 6:Enter the story for this section based on option 2 of Section 2:");
+    System.out.println("\nSection 6:Enter the story for this section based on option 2 of Section 2:");
     sec6 = stringReader.nextLine();
   }
   public void Section7(){
-    System.out.println("Section 7:Enter the story for this section based on option 1 of Section 3:");
+    System.out.println("\nSection 7:Enter the story for this section based on option 1 of Section 3:");
     sec7 = stringReader.nextLine(); 
   }
   public void Section8(){
-    System.out.println("Section 8:Enter the story for this section based on option 2 of Section 3:");
+    System.out.println("\nSection 8:Enter the story for this section based on option 2 of Section 3:");
     sec8 = stringReader.nextLine();
   }
   public void Section9(){
-    System.out.println("Section 9:Enter the story for this section based on option 1 of Section 4:");
+    System.out.println("\nSection 9:Enter the story for this section based on option 1 of Section 4:");
     sec9 = stringReader.nextLine();
   }
   public void Section10(){
-    System.out.println("Section 10:Enter the story for this section based on option 2 of Section 4:");
+    System.out.println("\nSection 10:Enter the story for this section based on option 2 of Section 4:");
     sec10 = stringReader.nextLine();
   }
   public void Section11(){
-    System.out.println("Section 11:Enter the story for this section based on option 1 of Section 5:");
+    System.out.println("\nSection 11:Enter the story for this section based on option 1 of Section 5:");
     sec11 = stringReader.nextLine();
   }
   public void Section12(){
-    System.out.println("Section 12:Enter the story for this section based on option 2 of Section 5:");
+    System.out.println("\nSection 12:Enter the story for this section based on option 2 of Section 5:");
     sec12 = stringReader.nextLine();
   }
   public void Section13(){
-    System.out.println("Section 13:Enter the story for this section based on option 1 of Section 6:");
+    System.out.println("\nSection 13:Enter the story for this section based on option 1 of Section 6:");
     sec13 = stringReader.nextLine();
       }
   public void Section14(){
-    System.out.println("Section 14:Enter the story for this section based on option 2 of Section 6:");
+    System.out.println("\nSection 14:Enter the story for this section based on option 2 of Section 6:");
     sec14 = stringReader.nextLine();
   }
 }
