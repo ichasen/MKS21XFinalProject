@@ -402,6 +402,7 @@ public class Story{
   }
   public void Section12(){
     System.out.println("\nSection 12:Enter the story for this section based on option 2 of Section 5:");
+
     sec12 = stringReader.nextLine();
   }
   public void Section13(){
