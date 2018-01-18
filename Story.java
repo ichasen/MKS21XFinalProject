@@ -27,25 +27,45 @@ public class Story{
     setOptions(3);
     Section4();
     setOptions(4);
-    //   Section7();
-    //    setOptions(7);
-    //   Section8();
-    //   setOptions(8);
-    //   Section5();
-    //  setOptions(5);
-    //  Section6();
-    //  setOptions(6);
+    Section5();
+    setOptions(5);
+    Section6();
+    setOptions(6);
+    Section7();
+    setOptions(7);
+    Section8();
+    setOptions(8);
+    Section9();
+    setOptions(9);
+    Section10();
+    setOptions(10);
+    Section11();
+    setOptions(11);
+    Section12();
+    setOptions(12);
+    Section13();
+    setOptions(13);
+    Section14();
+    setOptions(14);
     getSections();
   }
   public void getSections(){
-    System.out.println(Intro);
-    System.out.println(selectOptions(0));
-    System.out.println(selectOptions(1));
-    System.out.println(selectOptions(2));
-    System.out.println(selectOptions(3));
-    System.out.println(selectOptions(4));
-    System.out.println(selectOptions(5));
-    System.out.println(selectOptions(6));
+    String askyesno = "";
+    System.out.println("\nDo you want to play your story?Type 'yes' to play, type 'no' if you don't want to play\n");
+    askyesno = stringReader.nextLine();
+    if (askyesno.equals("yes")){
+      System.out.println(Intro);
+      System.out.println(selectOptions(0));
+      System.out.println(selectOptions(1));
+      System.out.println(selectOptions(2));
+      System.out.println(selectOptions(3));
+      System.out.println(selectOptions(4));
+      System.out.println(selectOptions(5));
+      System.out.println(selectOptions(6));
+    }
+    else {
+      System.exit(0);
+    }
   }
   public void setIntro(){
     System.out.println("How do you want to begin your story?: ");
@@ -54,7 +74,7 @@ public class Story{
   }
 
   public String selectOptions(int section){
-    System.out.println("Select the option you would like to pick.Type 'one' or 'two' to select the option you would like.");
+    System.out.println("\nSelect the option you would like to pick.Type 'one' or 'two' to select the option you would like.");
     run = stringReader.nextLine();
     ArrayList<String> s1 = new ArrayList<>();
     if (section == 0){
@@ -113,7 +133,7 @@ public class Story{
         return sec14;
 	    }
     }
-    return "option selected";
+    return "Please type a valid option!";
   }
   
   public String setOptions(int sect){
@@ -337,6 +357,9 @@ public class Story{
   public void Section1(){
     System.out.println("\nSection 1:Now enter the story for this section based on option 1 of your intro: ");
     sec1 = stringReader.nextLine();
+    if (sec1.equals("quit")){
+      System.exit(0);
+    }
   }
   public void Section2(){
     System.out.println("\nSection 2:Now enter the story for the next section based on option 2 of your intro: ");
