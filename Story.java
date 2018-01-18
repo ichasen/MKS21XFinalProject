@@ -3,12 +3,10 @@ import java.util.*;
 public class Story{
 
     Scanner stringReader = new Scanner(System.in);
-    Scanner numberReader = new Scanner(System.in);
 
     String fileSave;
     String Intro;
     String ending;
-    int numScenes;
     String one,two;
     String run;
     String run2;
