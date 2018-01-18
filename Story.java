@@ -180,7 +180,7 @@ public class Story{
     if (sect == 14){
 	ans = "Section 14";
     }
-    if (sect > 0 && sect < 15){
+    if (sect > 0 && sect < 8){
       System.out.println("\nPlease enter in option 1");
       one = stringReader.nextLine();
       System.out.println(">Option 1:" + one);
@@ -189,6 +189,20 @@ public class Story{
       System.out.println(">Option 2:" + two);
       System.out.println("\n" + ans + "Options:");
       getOptions();
+    }
+    if (sect >=8 && sect < 15){
+      System.out.println("\nPlease enter in option 1");
+      one = stringReader.nextLine();
+      System.out.println(">Option 1:" + one);
+      setEnding();
+      getEnding();
+      System.out.println("\nPlease enter in option 2");
+      two = stringReader.nextLine();
+      System.out.println(">Option 2:" + two);
+      System.out.println("\n" + ans + "Options:");
+      getOptions();
+      setEnding();
+      getEnding();
     }
     return "Set options";
   }
