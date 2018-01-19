@@ -1,7 +1,4 @@
-import java.util.Scanner;
-import java.util.*;
-import java.io.*;
-public class Story{
+public class Write{
 
   Scanner stringReader = new Scanner(System.in);
 
@@ -15,7 +12,7 @@ public class Story{
   String sec1, sec2, sec3, sec4, sec5, sec6, sec7, sec8, sec9, sec10, sec11, sec12, sec13, sec14;
 
   public Story(){
-    Intro();
+    setIntro();
     setOptions(0);
     Section1();
     setOptions(1);
@@ -61,7 +58,7 @@ public class Story{
         }
         else{
           System.out.println(selectOptions(4));
-        }  
+        }
       }else{
         System.out.println(selectOptions(2));
         if (run.equals("one")){
@@ -87,67 +84,67 @@ public class Story{
     run = stringReader.nextLine();
     ArrayList<String> s1 = new ArrayList<>();
     if (section == 0){
-	    if (run.equalsIgnoreCase("one")){
+      if (run.equalsIgnoreCase("one")){
         return "Section 1: "+  sec1;
       }
-	    else if(run.equalsIgnoreCase("two")){
+      else if(run.equalsIgnoreCase("two")){
         return "Section 2: " +sec2;
       }
     }
     if (section == 1){
-	    if (run.equalsIgnoreCase("one")){
+      if (run.equalsIgnoreCase("one")){
         return "Section 3: "+ sec3;
       }
-	    else if(run.equalsIgnoreCase("two")){
+      else if(run.equalsIgnoreCase("two")){
         return "Section 4: " +sec4;
       }
     }
     if (section == 2){
-	    if (run.equalsIgnoreCase("one")){
+      if (run.equalsIgnoreCase("one")){
         return "Section 5: "+ sec5;
       }
-	    else if(run.equalsIgnoreCase("two")){
+      else if(run.equalsIgnoreCase("two")){
         return "Section 6: " +sec6;
-	    }
+      }
     }
     if (section == 3){
-	    if (run.equalsIgnoreCase("one")){
+      if (run.equalsIgnoreCase("one")){
         return "Section 7: "+ sec7;
-	    }
-	    else if(run.equalsIgnoreCase("two")){
+      }
+      else if(run.equalsIgnoreCase("two")){
         return "Section 8: "+ sec8;
       }
     }
     if (section == 4){
-	    if (run.equalsIgnoreCase("one")){
+      if (run.equalsIgnoreCase("one")){
         return "Section 9: "+sec9;
       }
-	    else if(run.equalsIgnoreCase("two")){
+      else if(run.equalsIgnoreCase("two")){
         return "Section 10: "+sec10;
       }
     }
     if (section == 5){
-	    if (run.equalsIgnoreCase("one")){
+      if (run.equalsIgnoreCase("one")){
         return "Section 11: "+sec11;
-	    }
-	    else if(run.equalsIgnoreCase("two")){
+      }
+      else if(run.equalsIgnoreCase("two")){
         return "Section 12: "+sec12;
       }
     }
     if (section == 6){
-	    if (run.equalsIgnoreCase("one")){
+      if (run.equalsIgnoreCase("one")){
         return "Section 13: "+ sec13;
       }
-	    else if(run.equalsIgnoreCase("two")){
+      else if(run.equalsIgnoreCase("two")){
         return "Section 14: "+ sec14;
-	    }
+      }
     }
     else {
       throw new  IllegalArgumentException("Please type one or two!");
     }
     return "Please type a valid option!";
   }
-  
+
   public String setOptions(int sect){
     String ans = "";
     if (sect == 0){
@@ -233,21 +230,21 @@ public class Story{
   }
   // public void saveStory(File fileSave){
   //if (!(fileSave.exists())){
-  //	    throw new FileNotFoundException;
-  //	}
+  //      throw new FileNotFoundException;
+  //  }
   //  }
   // public void saveStory(File fileSave){
-  //	if (!(fileSave.exists())){
-  //	    throw new FileNotFoundException;
-  //	}
+  //  if (!(fileSave.exists())){
+  //      throw new FileNotFoundException;
+  //  }
   // }
 
   //  public void saveStory(){
-  //	if (!(fileSave.exists())){
-  //	    throw new FileNotFoundException();
-  //	}
+  //  if (!(fileSave.exists())){
+  //      throw new FileNotFoundException();
+  //  }
   //}
-  
+
   public String getFileSave(){
     return fileSave;
   }
@@ -289,7 +286,7 @@ public class Story{
   }
   public void Section7(){
     System.out.println("\nSection 7:Enter the story for this section based on option 1 of Section 3:");
-    sec7 = stringReader.nextLine(); 
+    sec7 = stringReader.nextLine();
   }
   public void Section8(){
     System.out.println("\nSection 8:Enter the story for this section based on option 2 of Section 3:");
@@ -320,4 +317,5 @@ public class Story{
     System.out.println("\nSection 14:Enter the story for this section based on option 2 of Section 6:");
     sec14 = stringReader.nextLine();
   }
+}
 }
