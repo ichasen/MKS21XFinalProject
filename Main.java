@@ -13,7 +13,7 @@ public class Main{
     }
     if (run.equalsIgnoreCase("read")){
       try{
-        FileReader fr = new FileReader("test.txt");
+        FileReader fr = new FileReader("out.txt");
         BufferedReader br = new BufferedReader(fr);
 
         String str;

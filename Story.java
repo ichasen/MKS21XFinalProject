@@ -154,7 +154,7 @@ public class Story{
     }
     public void log(String message){
 	try{
-	    PrintWriter outputfile = new PrintWriter(new FileWriter("test.txt",true),true);
+	    PrintWriter outputfile = new PrintWriter(new FileWriter("out.txt",false),true);
 	    outputfile.write(message + "\n");
 	    outputfile.close();
 	}catch (IOException e){
@@ -276,7 +276,7 @@ public class Story{
 	System.out.println(example);
     }
     public void Section1(){
-	System.out.println("\nSection 1:Now enter the story for this section based on option 1 of your intro. You may quit at any time by typing 'quit': ");
+	System.out.println("\nSection 1:Now enter the story for this section based on option 1 of your intro. You may quit at any time by typing 'quit'.However, please note that if you type quit before completing all sections, your sections will not be saved: ");
 	sec1 = stringReader.nextLine();
 	if (sec1.equals("quit")){
 	    System.exit(0);
