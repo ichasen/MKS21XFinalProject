@@ -46,8 +46,7 @@ public class Story{
 	setOptions(13);
 	Section14();
 	setOptions(14);
-	log(Intro);
-	log(sec1);
+	log("\nIntro:"+Intro + "\nSection 1:" +sec1 + "\nSection 2:"+sec2 + "\n Section 3:"+sec3+"\nSection 4:"+sec4+ "\nSection 5:"+sec5+"\nSection 6:"+sec6+"\nSection 7:"+sec7+"\nSection 8:"+sec8+"\nSection 9:"+sec9+"\nSection 10:"+sec10+"\nSection11:"+sec11+"\nSection12:"+sec12 + "\nSection13:"+sec13 + "\nSection14:"+sec14 );
 	getSections();
 
     }
@@ -210,7 +209,7 @@ public class Story{
 	if (sect == 14){
 	    ans = "Section 14 ";
 	}
-	if (sect > 0 && sect < 8){
+	if (sect > 0 && sect < 7){
 	    System.out.println("\nPlease enter in option 1");
 	    one = stringReader.nextLine();
 	    System.out.println(">Option 1:" + one);
