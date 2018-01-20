@@ -260,63 +260,143 @@ public class Story{
     System.out.println(example);
   }
   public void Section1(){
-    System.out.println("\nSection 1:Now enter the story for this section based on option 1 of your intro: ");
+    System.out.println("\nSection 1:Now enter the story for this section based on option 1 of your intro. Throughout the story, you may type 'play' to play your story: ");
     sec1 = stringReader.nextLine();
     if (sec1.equals("quit")){
       System.exit(0);
+    }
+    if (sec1.equals("play")){
+	System.out.println(Intro);
     }
   }
   public void Section2(){
     System.out.println("\nSection 2:Now enter the story for the next section based on option 2 of your intro: ");
     sec2 = stringReader.nextLine();
+    if (sec2.equals("quit")){
+      System.exit(0);
+    }
+    if (sec2.equals("play")){
+	System.out.println(Intro + sec1);
+    }
   }
   public void Section3(){
     System.out.println("\nSection 3:Enter the story for this section based on option 1 of Section 1: ");
     sec3 = stringReader.nextLine();
+    if (sec3.equals("quit")){
+      System.exit(0);
+    }
+    if (sec3.equals("play")){
+	System.out.println(Intro + sec1 + sec2);
+    }
   }
   public void Section4(){
     System.out.println("\nSection 4:Enter the story for this section based on option 2 of Section 1:");
     sec4 = stringReader.nextLine();
+    if (sec4.equals("quit")){
+      System.exit(0);
+    }
+    if (sec4.equals("play")){
+	System.out.println(Intro + sec1 + sec2 + sec3);
+    }
   }
   public void Section5(){
     System.out.println("\nSection 5:Enter the story for this section based on option 1 of Section 2:");
     sec5 = stringReader.nextLine();
+    if (sec5.equals("quit")){
+      System.exit(0);
+    }
+    if (sec5.equals("play")){
+	System.out.println(Intro + sec1 + sec2 + sec3 + sec4);
+    }
   }
   public void Section6(){
     System.out.println("\nSection 6:Enter the story for this section based on option 2 of Section 2:");
     sec6 = stringReader.nextLine();
+    if (sec6.equals("quit")){
+      System.exit(0);
+    }
+    if (sec6.equals("play")){
+	System.out.println(Intro + sec1 + sec2 + sec3 + sec4 + sec5);
+    }
   }
   public void Section7(){
     System.out.println("\nSection 7:Enter the story for this section based on option 1 of Section 3:");
-    sec7 = stringReader.nextLine(); 
+    sec7 = stringReader.nextLine();
+    if (sec7.equals("quit")){
+      System.exit(0);
+    }
+    if (sec7.equals("play")){
+	System.out.println(Intro + sec1 + sec2 + sec3 + sec4 + sec5 + sec6);
+    }
   }
   public void Section8(){
     System.out.println("\nSection 8:Enter the story for this section based on option 2 of Section 3:");
     sec8 = stringReader.nextLine();
+    if (sec8.equals("quit")){
+      System.exit(0);
+    }
+    if (sec8.equals("play")){
+	System.out.println(Intro + sec1 + sec2 + sec3 + sec4 + sec5 + sec6 + sec7);
+    }
   }
   public void Section9(){
     System.out.println("\nSection 9:Enter the story for this section based on option 1 of Section 4:");
     sec9 = stringReader.nextLine();
+    if (sec9.equals("quit")){
+      System.exit(0);
+    }
+    if (sec9.equals("play")){
+	System.out.println(Intro + sec1 + sec2 + sec3 + sec4 + sec5 + sec6 + sec7 + sec8);
+    }
   }
   public void Section10(){
     System.out.println("\nSection 10:Enter the story for this section based on option 2 of Section 4:");
     sec10 = stringReader.nextLine();
+    if (sec10.equals("quit")){
+      System.exit(0);
+    }
+    if (sec10.equals("play")){
+	System.out.println(Intro + sec1 + sec2 + sec3 + sec4 + sec5 + sec6 + sec7 + sec8 + sec9);
+    }
   }
   public void Section11(){
     System.out.println("\nSection 11:Enter the story for this section based on option 1 of Section 5:");
     sec11 = stringReader.nextLine();
+    if (sec11.equals("quit")){
+      System.exit(0);
+    }
+    if (sec11.equals("play")){
+	System.out.println(Intro + sec1 + sec2 + sec3 + sec4 + sec5 + sec6 + sec7 + sec8 + sec9 + sec10);
+    }
   }
   public void Section12(){
     System.out.println("\nSection 12:Enter the story for this section based on option 2 of Section 5:");
-
     sec12 = stringReader.nextLine();
+    if (sec12.equals("quit")){
+      System.exit(0);
+    }
+    if (sec12.equals("play")){
+	System.out.println(Intro + sec1 + sec2 + sec3 + sec4 + sec5 + sec6 + sec7 + sec8 + sec9 + sec10 + sec11);
+    }
   }
   public void Section13(){
     System.out.println("\nSection 13:Enter the story for this section based on option 1 of Section 6:");
     sec13 = stringReader.nextLine();
+    if (sec13.equals("quit")){
+      System.exit(0);
+    }
+    if (sec13.equals("play")){
+	System.out.println(Intro + sec1 + sec2 + sec3 + sec4 + sec5 + sec6 + sec7 + sec8 + sec9 + sec10 + sec11 + sec12);
+    }
   }
   public void Section14(){
     System.out.println("\nSection 14:Enter the story for this section based on option 2 of Section 6:");
     sec14 = stringReader.nextLine();
+    if (sec14.equals("quit")){
+      System.exit(0);
+    }
+    if (sec14.equals("play")){
+	System.out.println(Intro + sec1 + sec2 + sec3 + sec4 + sec5 + sec6 + sec7 + sec8 + sec9 + sec10 + sec11 + sec12 + sec13);
+    }
   }
 }
