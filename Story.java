@@ -13,7 +13,8 @@ public class Story{
     String run2;
     String ans1,ans2;
     String sec1, sec2, sec3, sec4, sec5, sec6, sec7, sec8, sec9, sec10, sec11, sec12, sec13, sec14;
-
+    String play;
+    
     public Story(){
 	setIntro();
 	setOptions(0);
@@ -79,6 +80,7 @@ public class Story{
 	    System.exit(0);
 	}
     }
+
     public void setIntro(){
 	System.out.println("How do you want to begin your story?: ");
 	Intro=stringReader.nextLine();//set intro that what the user typed in
@@ -261,74 +263,184 @@ public class Story{
     //	}
     //}
   
+    public String getFileSave(){
+	return fileSave;
+    }
     public void getOptions(){
 	System.out.println(">>>>Option 1:" + this.one);
 	System.out.println(">>>>Option 2:" + this.two);
 
     }
-
-    public static void main(String arr[]) throws FileNotFoundException
-    {   
-	Story example= new Story();
+    public static void main(String[] args){
+	Story example = new Story();
+	System.out.println(example);
     }
     public void Section1(){
-	System.out.println("\nSection 1:Now enter the story for this section based on option 1 of your intro: ");
+	System.out.println("\nSection 1:Now enter the story for this section based on option 1 of your intro. You may quit at any time by typing 'quit': ");
 	sec1 = stringReader.nextLine();
 	if (sec1.equals("quit")){
 	    System.exit(0);
+	}
+        System.out.println("Do you want to play your sections so far? Please type 'yes' or 'no'");
+	play = stringReader.nextLine();
+	if (play.equalsIgnoreCase("yes")){
+	    System.out.println("Intro: " + Intro  + "\n" + "Section 1: " + sec1);
 	}
     }
     public void Section2(){
 	System.out.println("\nSection 2:Now enter the story for the next section based on option 2 of your intro: ");
 	sec2 = stringReader.nextLine();
+	if (sec2.equals("quit")){
+	    System.exit(0);
+	}
+        System.out.println("Do you want to play your sections so far? Please type 'yes' or 'no'");
+	play = stringReader.nextLine();
+	if (play.equalsIgnoreCase("yes")){
+	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2);
+	}
     }
     public void Section3(){
 	System.out.println("\nSection 3:Enter the story for this section based on option 1 of Section 1: ");
 	sec3 = stringReader.nextLine();
+	if (sec3.equals("quit")){
+	    System.exit(0);
+	}
+	System.out.println("Do you want to play your sections? Please type 'yes' or 'no'");
+	play = stringReader.nextLine();
+	if (play.equalsIgnoreCase("yes")){
+	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2 + "\n" + "Section 3: " + sec3);
+	}
     }
     public void Section4(){
 	System.out.println("\nSection 4:Enter the story for this section based on option 2 of Section 1:");
 	sec4 = stringReader.nextLine();
+	if (sec4.equals("quit")){
+	    System.exit(0);
+	}
+	System.out.println("Do you want to play your sections? Please type 'yes' or 'no'");
+	play = stringReader.nextLine();
+	if (play.equalsIgnoreCase("yes")){
+	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2 + "\n" + "Section 3: " + sec3 + "\n" + "Section 4: " + sec4);
+	}
     }
     public void Section5(){
 	System.out.println("\nSection 5:Enter the story for this section based on option 1 of Section 2:");
 	sec5 = stringReader.nextLine();
+	if (sec5.equals("quit")){
+	    System.exit(0);
+	}
+	System.out.println("Do you want to play your sections? Please type 'yes' or 'no'");
+	play = stringReader.nextLine();
+	if (play.equalsIgnoreCase("yes")){
+	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2 + "\n" + "Section 3: " + sec3 + "\n" + "Section 4: " + sec4 + "\n" + "Section 5: " + sec5);
+	}
     }
     public void Section6(){
 	System.out.println("\nSection 6:Enter the story for this section based on option 2 of Section 2:");
 	sec6 = stringReader.nextLine();
+	if (sec6.equals("quit")){
+	    System.exit(0);
+	}
+	System.out.println("Do you want to play your sections? Please type 'yes' or 'no'");
+	play = stringReader.nextLine();
+	if (play.equalsIgnoreCase("yes")){
+	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2 + "\n" + "Section 3: " + sec3 + "\n" + "Section 4: " + sec4 + "\n" + "Section 5: " + sec5 + "\n" + "Section 6: " + sec6);
+	}
     }
     public void Section7(){
 	System.out.println("\nSection 7:Enter the story for this section based on option 1 of Section 3:");
-	sec7 = stringReader.nextLine(); 
+	sec7 = stringReader.nextLine();
+	if (sec7.equals("quit")){
+	    System.exit(0);
+	}
+	System.out.println("Do you want to play your sections? Please type 'yes' or 'no'");
+	play = stringReader.nextLine();
+	if (play.equalsIgnoreCase("yes")){
+	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2 + "\n" + "Section 3: " + sec3 + "\n" + "Section 4: " + sec4 + "\n" + "Section 5: " + sec5 + "\n" + "Section 6: " + sec6 + "\n" + "Section 7: " + sec7);
+	}
     }
     public void Section8(){
 	System.out.println("\nSection 8:Enter the story for this section based on option 2 of Section 3:");
 	sec8 = stringReader.nextLine();
+	if (sec8.equals("quit")){
+	    System.exit(0);
+	}
+	System.out.println("Do you want to play your sections? Please type 'yes' or 'no'");
+	play = stringReader.nextLine();
+	if (play.equalsIgnoreCase("yes")){
+	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2 + "\n" + "Section 3: " + sec3 + "\n" + "Section 4: " + sec4 + "\n" + "Section 5: " + sec5 + "\n" + "Section 6: " + sec6 + "\n" + "Section 7: " + sec7 + "\n" + "Section 8: " + sec8);
+	}
     }
     public void Section9(){
 	System.out.println("\nSection 9:Enter the story for this section based on option 1 of Section 4:");
 	sec9 = stringReader.nextLine();
+	if (sec9.equals("quit")){
+	    System.exit(0);
+	}
+	System.out.println("Do you want to play your sections? Please type 'yes' or 'no'");
+	play = stringReader.nextLine();
+	if (play.equalsIgnoreCase("yes")){
+	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2 + "\n" + "Section 3: " + sec3 + "\n" + "Section 4: " + sec4 + "\n" + "Section 5: " + sec5 + "\n" + "Section 6: " + sec6 + "\n" + "Section 7: " + sec7 + "\n" + "Section 8: " + sec8 + "\n" + "Section 9: " + sec9);
+	}
     }
     public void Section10(){
 	System.out.println("\nSection 10:Enter the story for this section based on option 2 of Section 4:");
 	sec10 = stringReader.nextLine();
+	if (sec10.equals("quit")){
+	    System.exit(0);
+	}
+	System.out.println("Do you want to play your sections? Please type 'yes' or 'no'");
+	play = stringReader.nextLine();
+	if (play.equalsIgnoreCase("yes")){
+	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2 + "\n" + "Section 3: " + sec3 + "\n" + "Section 4: " + sec4 + "\n" + "Section 5: " + sec5 + "\n" + "Section 6: " + sec6 + "\n" + "Section 7: " + sec7 + "\n" + "Section 8: " + sec8 + "\n" + "Section 9: " + sec9 + "\n" + "Section 10: " + sec10);
+	}
     }
     public void Section11(){
 	System.out.println("\nSection 11:Enter the story for this section based on option 1 of Section 5:");
 	sec11 = stringReader.nextLine();
+	if (sec11.equals("quit")){
+	    System.exit(0);
+	}
+	System.out.println("Do you want to play your sections? Please type 'yes' or 'no'");
+	play = stringReader.nextLine();
+	if (play.equalsIgnoreCase("yes")){
+	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2 + "\n" + "Section 3: " + sec3 + "\n" + "Section 4: " + sec4 + "\n" + "Section 5: " + sec5 + "\n" + "Section 6: " + sec6 + "\n" + "Section 7: " + sec7 + "\n" + "Section 8: " + sec8 + "\n" + "Section 9: " + sec9 + "\n" + "Section 10: " + sec10 + "\n" + "Section 11: " + sec11);
+	}
     }
     public void Section12(){
 	System.out.println("\nSection 12:Enter the story for this section based on option 2 of Section 5:");
-
 	sec12 = stringReader.nextLine();
+	if (sec12.equals("quit")){
+	    System.exit(0);
+	}
+	System.out.println("Do you want to play your sections? Please type 'yes' or 'no'");
+	play = stringReader.nextLine();
+	if (play.equalsIgnoreCase("yes")){
+	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2 + "\n" + "Section 3: " + sec3 + "\n" + "Section 4: " + sec4 + "\n" + "Section 5: " + sec5 + "\n" + "Section 6: " + sec6 + "\n" + "Section 7: " + sec7 + "\n" + "Section 8: " + sec8 + "\n" + "Section 9: " + sec9 + "\n" + "Section 10: " + sec10 + "\n" + "Section 11: " + sec11 + "\n" + "Section 12: " + sec12);
+	}
     }
     public void Section13(){
 	System.out.println("\nSection 13:Enter the story for this section based on option 1 of Section 6:");
 	sec13 = stringReader.nextLine();
+	if (sec13.equals("quit")){
+	    System.exit(0);
+	}
+	System.out.println("Do you want to play your sections? Please type 'yes' or 'no'");
+	play = stringReader.nextLine();
+	if (play.equalsIgnoreCase("yes")){
+	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2 + "\n" + "Section 3: " + sec3 + "\n" + "Section 4: " + sec4 + "\n" + "Section 5: " + sec5 + "\n" + "Section 6: " + sec6 + "\n" + "Section 7: " + sec7 + "\n" + "Section 8: " + sec8 + "\n" + "Section 9: " + sec9 + "\n" + "Section 10: " + sec10 + "\n" + "Section 11: " + sec11 + "\n" + "Section 12: " + sec12 + "\n" + "Section 13: " + sec13);
+	}
     }
     public void Section14(){
 	System.out.println("\nSection 14:Enter the story for this section based on option 2 of Section 6:");
 	sec14 = stringReader.nextLine();
+	if (sec14.equals("quit")){
+	    System.exit(0);
+	}
+	System.out.println("Do you want to play your sections? Please type 'yes' or 'no'");
+	play = stringReader.nextLine();
+	if (play.equalsIgnoreCase("yes")){
+	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2 + "\n" + "Section 3: " + sec3 + "\n" + "Section 4: " + sec4 + "\n" + "Section 5: " + sec5 + "\n" + "Section 6: " + sec6 + "\n" + "Section 7: " + sec7 + "\n" + "Section 8: " + sec8 + "\n" + "Section 9: " + sec9 + "\n" + "Section 10: " + sec10 + "\n" + "Section 11: " + sec11 + "\n" + "Section 12: " + sec12 + "\n" + "Section 13: " + sec13 + "\n" + "Section 14: " + sec14);
+	}
     }
 }
