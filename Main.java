@@ -30,18 +30,14 @@ public class Main{
         File file = new File("test.txt");
         FileWriter fw = new FileWriter(file);
         PrintWriter pw =new PrintWriter(fw);
-        pw.println("HI");
+        pw.println();
         pw.close();
       }catch (IOException e){
         out.println("dsadas");
       }
-
+      
     }
   }
-
-
-
-
   public static void main(String[] args){
     Main example = new Main();
     System.out.println(example);
