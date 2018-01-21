@@ -18,10 +18,7 @@ public class Main{
 	r.closeFile();
     }
     if (run.equalsIgnoreCase("play")){
-	Reading r = new Reading();
-	r.openFile();
-	r.readFile();
-	r.closeFile();
+	Play r = new Play();
     }
   }
   public static void main(String[] args){
