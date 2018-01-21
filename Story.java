@@ -244,11 +244,17 @@ public class Story{
 	if (sec1.equals("quit")){
 	    System.exit(0);
 	}
-        System.out.println("Do you want to play your sections so far? Please type 'yes' or 'no'");
+        System.out.println("Do you want to play your sections so far? Please type 'yes' or 'no', or else your story to this point will not be saved.");
 	play = stringReader.nextLine();
 	if (play.equalsIgnoreCase("yes")){
 	    System.out.println("Intro: " + Intro  + "\n" + "Section 1: " + sec1);
 	}
+	if (play.equalsIgnoreCase("no")){
+	    System.out.println ("On to the next section");
+	}
+	else{
+	    throw new  IllegalArgumentException("Please type yes or no!");
+	}   
     }
     public void Section2(){
 	System.out.println("\nSection 2:Now enter the alternative to Section 1, based on option 2 of your intro: ");
@@ -256,10 +262,16 @@ public class Story{
 	if (sec2.equals("quit")){
 	    System.exit(0);
 	}
-        System.out.println("Do you want to play your sections so far? Please type 'yes' or 'no'");
+        System.out.println("Do you want to play your sections so far? Please type 'yes' or 'no', or else your story to this point will not be saved");
 	play = stringReader.nextLine();
 	if (play.equalsIgnoreCase("yes")){
 	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2);
+	}
+	if (play.equalsIgnoreCase("no")){
+	    System.out.println ("On to the next section");
+	}
+	else{
+	    throw new  IllegalArgumentException("Please type yes or no!");
 	}
     }
     public void Section3(){
@@ -268,10 +280,16 @@ public class Story{
 	if (sec3.equals("quit")){
 	    System.exit(0);
 	}
-	System.out.println("Do you want to play your sections? Please type 'yes' or 'no'");
+	System.out.println("Do you want to play your sections? Please type 'yes' or 'no', or else your story will not be saved");
 	play = stringReader.nextLine();
 	if (play.equalsIgnoreCase("yes")){
 	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2 + "\n" + "Section 3: " + sec3);
+	}
+	if (play.equalsIgnoreCase("no")){
+	    System.out.println ("On to the next section");
+	}
+	else{
+	    throw new  IllegalArgumentException("Please type yes or no!");
 	}
     }
     public void Section4(){
@@ -280,10 +298,16 @@ public class Story{
 	if (sec4.equals("quit")){
 	    System.exit(0);
 	}
-	System.out.println("Do you want to play your sections? Please type 'yes' or 'no'");
+	System.out.println("Do you want to play your sections? Please type 'yes' or 'no', or else your story will not be saved");
 	play = stringReader.nextLine();
 	if (play.equalsIgnoreCase("yes")){
 	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2 + "\n" + "Section 3: " + sec3 + "\n" + "Section 4: " + sec4);
+	}
+	if (play.equalsIgnoreCase("no")){
+	    System.out.println ("On to the next section");
+	}
+	else{
+	    throw new  IllegalArgumentException("Please type yes or no!");
 	}
     }
     public void Section5(){
@@ -292,10 +316,16 @@ public class Story{
 	if (sec5.equals("quit")){
 	    System.exit(0);
 	}
-	System.out.println("Do you want to play your sections? Please type 'yes' or 'no'");
+	System.out.println("Do you want to play your sections? Please type 'yes' or 'no', or else your story will not be saved");
 	play = stringReader.nextLine();
 	if (play.equalsIgnoreCase("yes")){
 	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2 + "\n" + "Section 3: " + sec3 + "\n" + "Section 4: " + sec4 + "\n" + "Section 5: " + sec5);
+	}
+	if (play.equalsIgnoreCase("no")){
+	    System.out.println ("On to the next section");
+	}
+	else{
+	    throw new  IllegalArgumentException("Please type yes or no!");
 	}
     }
     public void Section6(){
@@ -304,10 +334,16 @@ public class Story{
 	if (sec6.equals("quit")){
 	    System.exit(0);
 	}
-	System.out.println("Do you want to play your sections? Please type 'yes' or 'no'");
+	System.out.println("Do you want to play your sections? Please type 'yes' or 'no', or else your story will not be saved");
 	play = stringReader.nextLine();
 	if (play.equalsIgnoreCase("yes")){
 	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2 + "\n" + "Section 3: " + sec3 + "\n" + "Section 4: " + sec4 + "\n" + "Section 5: " + sec5 + "\n" + "Section 6: " + sec6);
+	}
+	if (play.equalsIgnoreCase("no")){
+	    System.out.println ("On to the next section");
+	}
+	else{
+	    throw new  IllegalArgumentException("Please type yes or no!");
 	}
     }
     public void Section7(){
@@ -321,6 +357,12 @@ public class Story{
 	if (play.equalsIgnoreCase("yes")){
 	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2 + "\n" + "Section 3: " + sec3 + "\n" + "Section 4: " + sec4 + "\n" + "Section 5: " + sec5 + "\n" + "Section 6: " + sec6 + "\n" + "Section 7: " + sec7);
 	}
+	if (play.equalsIgnoreCase("no")){
+	    System.out.println ("On to the next section");
+	}
+	else{
+	    throw new  IllegalArgumentException("Please type yes or no!");
+	}
     }
     public void Section8(){
 	System.out.println("\nSection 8:Enter the alternative to Section 7, based on option 2 of Section 3:");
@@ -332,6 +374,12 @@ public class Story{
 	play = stringReader.nextLine();
 	if (play.equalsIgnoreCase("yes")){
 	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2 + "\n" + "Section 3: " + sec3 + "\n" + "Section 4: " + sec4 + "\n" + "Section 5: " + sec5 + "\n" + "Section 6: " + sec6 + "\n" + "Section 7: " + sec7 + "\n" + "Section 8: " + sec8);
+	}
+	if (play.equalsIgnoreCase("no")){
+	    System.out.println ("On to the next section");
+	}
+	else{
+	    throw new  IllegalArgumentException("Please type yes or no!");
 	}
     }
     public void Section9(){
@@ -345,6 +393,12 @@ public class Story{
 	if (play.equalsIgnoreCase("yes")){
 	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2 + "\n" + "Section 3: " + sec3 + "\n" + "Section 4: " + sec4 + "\n" + "Section 5: " + sec5 + "\n" + "Section 6: " + sec6 + "\n" + "Section 7: " + sec7 + "\n" + "Section 8: " + sec8 + "\n" + "Section 9: " + sec9);
 	}
+	if (play.equalsIgnoreCase("no")){
+	    System.out.println ("On to the next section");
+	}
+	else{
+	    throw new  IllegalArgumentException("Please type yes or no!");
+	}
     }
     public void Section10(){
 	System.out.println("\nSection 10:Enter the alternative to Section 9, based on option 2 of Section 4:");
@@ -356,6 +410,12 @@ public class Story{
 	play = stringReader.nextLine();
 	if (play.equalsIgnoreCase("yes")){
 	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2 + "\n" + "Section 3: " + sec3 + "\n" + "Section 4: " + sec4 + "\n" + "Section 5: " + sec5 + "\n" + "Section 6: " + sec6 + "\n" + "Section 7: " + sec7 + "\n" + "Section 8: " + sec8 + "\n" + "Section 9: " + sec9 + "\n" + "Section 10: " + sec10);
+	}
+	if (play.equalsIgnoreCase("no")){
+	    System.out.println ("On to the next section");
+	}
+	else{
+	    throw new  IllegalArgumentException("Please type yes or no!");
 	}
     }
     public void Section11(){
@@ -369,6 +429,12 @@ public class Story{
 	if (play.equalsIgnoreCase("yes")){
 	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2 + "\n" + "Section 3: " + sec3 + "\n" + "Section 4: " + sec4 + "\n" + "Section 5: " + sec5 + "\n" + "Section 6: " + sec6 + "\n" + "Section 7: " + sec7 + "\n" + "Section 8: " + sec8 + "\n" + "Section 9: " + sec9 + "\n" + "Section 10: " + sec10 + "\n" + "Section 11: " + sec11);
 	}
+	if (play.equalsIgnoreCase("no")){
+	    System.out.println ("On to the next section");
+	}
+	else{
+	    throw new  IllegalArgumentException("Please type yes or no!");
+	}
     }
     public void Section12(){
 	System.out.println("\nSection 12:Enter the alternative to Section 11, based on option 2 of Section 5:");
@@ -380,6 +446,12 @@ public class Story{
 	play = stringReader.nextLine();
 	if (play.equalsIgnoreCase("yes")){
 	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2 + "\n" + "Section 3: " + sec3 + "\n" + "Section 4: " + sec4 + "\n" + "Section 5: " + sec5 + "\n" + "Section 6: " + sec6 + "\n" + "Section 7: " + sec7 + "\n" + "Section 8: " + sec8 + "\n" + "Section 9: " + sec9 + "\n" + "Section 10: " + sec10 + "\n" + "Section 11: " + sec11 + "\n" + "Section 12: " + sec12);
+	}
+	if (play.equalsIgnoreCase("no")){
+	    System.out.println ("On to the next section");
+	}
+	else{
+	    throw new  IllegalArgumentException("Please type yes or no!");
 	}
     }
     public void Section13(){
@@ -393,6 +465,12 @@ public class Story{
 	if (play.equalsIgnoreCase("yes")){
 	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2 + "\n" + "Section 3: " + sec3 + "\n" + "Section 4: " + sec4 + "\n" + "Section 5: " + sec5 + "\n" + "Section 6: " + sec6 + "\n" + "Section 7: " + sec7 + "\n" + "Section 8: " + sec8 + "\n" + "Section 9: " + sec9 + "\n" + "Section 10: " + sec10 + "\n" + "Section 11: " + sec11 + "\n" + "Section 12: " + sec12 + "\n" + "Section 13: " + sec13);
 	}
+	if (play.equalsIgnoreCase("no")){
+	    System.out.println ("On to the next section");
+	}
+	else{
+	    throw new  IllegalArgumentException("Please type yes or no!");
+	}
     }
     public void Section14(){
 	System.out.println("\nSection 14:Enter the alternative to Section 13 based on option 2 of Section 6:");
@@ -404,6 +482,12 @@ public class Story{
 	play = stringReader.nextLine();
 	if (play.equalsIgnoreCase("yes")){
 	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2 + "\n" + "Section 3: " + sec3 + "\n" + "Section 4: " + sec4 + "\n" + "Section 5: " + sec5 + "\n" + "Section 6: " + sec6 + "\n" + "Section 7: " + sec7 + "\n" + "Section 8: " + sec8 + "\n" + "Section 9: " + sec9 + "\n" + "Section 10: " + sec10 + "\n" + "Section 11: " + sec11 + "\n" + "Section 12: " + sec12 + "\n" + "Section 13: " + sec13 + "\n" + "Section 14: " + sec14);
+	}
+	if (play.equalsIgnoreCase("no")){
+	    System.out.println ("On to the next section");
+	}
+	else{
+	    throw new  IllegalArgumentException("Please type yes or no!");
 	}
     }
     public void setEnding(){
