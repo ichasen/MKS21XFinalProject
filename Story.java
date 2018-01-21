@@ -222,12 +222,12 @@ public class Story{
 	if (sect >=7 && sect < 15){
 	    System.out.println("\nPlease enter in option 1");
 	    one = stringReader.nextLine();
-	    System.out.println(">Option 1:" + one);
+	    System.out.println(">Option 1: " + one);
 	    setEnding();
 	    getEnding();
 	    System.out.println("\nPlease enter in option 2");
 	    two = stringReader.nextLine();
-	    System.out.println(">Option 2:" + two);
+	    System.out.println(">Option 2: " + two);
 	    System.out.println("\n" + ans + "Options:");
 	    getOptions();
 	    setEnding();
@@ -238,44 +238,8 @@ public class Story{
     public void getIntro(){
 	System.out.println("Intro: " + Intro);
     }
-    public void setEnding(){
-	System.out.println("How do you want your story to end from this result?");
-	ending=stringReader.nextLine();//set ending to what the user typed in
-    }
-    public void getEnding(){
-	System.out.println("Ending:"+ this.ending);
-    }
-    // public void saveStory(File fileSave){
-    //if (!(fileSave.exists())){
-    //	    throw new FileNotFoundException;
-    //	}
-    //  }
-    // public void saveStory(File fileSave){
-    //	if (!(fileSave.exists())){
-    //	    throw new FileNotFoundException;
-    //	}
-    // }
-
-    //  public void saveStory(){
-    //	if (!(fileSave.exists())){
-    //	    throw new FileNotFoundException();
-    //	}
-    //}
-  
-    public String getFileSave(){
-	return fileSave;
-    }
-    public void getOptions(){
-	System.out.println(">>>>Option 1:" + this.one);
-	System.out.println(">>>>Option 2:" + this.two);
-
-    }
-    public static void main(String[] args){
-	Story example = new Story();
-	System.out.println(example);
-    }
     public void Section1(){
-	System.out.println("\nSection 1:Now enter the story for this section based on option 1 of your intro. You may quit at any time by typing 'quit'.However, please note that if you type quit before completing all sections, your sections will not be saved: ");
+	System.out.println("\nSection 1:Now enter the story for this section based on option 1 of your intro. You may quit at any time by typing 'quit', although your sections will not be saved: ");
 	sec1 = stringReader.nextLine();
 	if (sec1.equals("quit")){
 	    System.exit(0);
@@ -287,7 +251,7 @@ public class Story{
 	}
     }
     public void Section2(){
-	System.out.println("\nSection 2:Now enter the story for the next section based on option 2 of your intro: ");
+	System.out.println("\nSection 2:Now enter the alternative to Section 1, based on option 2 of your intro: ");
 	sec2 = stringReader.nextLine();
 	if (sec2.equals("quit")){
 	    System.exit(0);
@@ -311,7 +275,7 @@ public class Story{
 	}
     }
     public void Section4(){
-	System.out.println("\nSection 4:Enter the story for this section based on option 2 of Section 1:");
+	System.out.println("\nSection 4: Enter the alternative to Section 3, based on option 2 of Section 1:");
 	sec4 = stringReader.nextLine();
 	if (sec4.equals("quit")){
 	    System.exit(0);
@@ -335,7 +299,7 @@ public class Story{
 	}
     }
     public void Section6(){
-	System.out.println("\nSection 6:Enter the story for this section based on option 2 of Section 2:");
+	System.out.println("\nSection 6:Now enter the alternative to Section 5, based on option 2 of Section 2:");
 	sec6 = stringReader.nextLine();
 	if (sec6.equals("quit")){
 	    System.exit(0);
@@ -359,7 +323,7 @@ public class Story{
 	}
     }
     public void Section8(){
-	System.out.println("\nSection 8:Enter the story for this section based on option 2 of Section 3:");
+	System.out.println("\nSection 8:Enter the alternative to Section 7, based on option 2 of Section 3:");
 	sec8 = stringReader.nextLine();
 	if (sec8.equals("quit")){
 	    System.exit(0);
@@ -383,7 +347,7 @@ public class Story{
 	}
     }
     public void Section10(){
-	System.out.println("\nSection 10:Enter the story for this section based on option 2 of Section 4:");
+	System.out.println("\nSection 10:Enter the alternative to Section 9, based on option 2 of Section 4:");
 	sec10 = stringReader.nextLine();
 	if (sec10.equals("quit")){
 	    System.exit(0);
@@ -407,7 +371,7 @@ public class Story{
 	}
     }
     public void Section12(){
-	System.out.println("\nSection 12:Enter the story for this section based on option 2 of Section 5:");
+	System.out.println("\nSection 12:Enter the alternative to Section 11, based on option 2 of Section 5:");
 	sec12 = stringReader.nextLine();
 	if (sec12.equals("quit")){
 	    System.exit(0);
@@ -431,15 +395,35 @@ public class Story{
 	}
     }
     public void Section14(){
-	System.out.println("\nSection 14:Enter the story for this section based on option 2 of Section 6:");
+	System.out.println("\nSection 14:Enter the alternative to Section 13 based on option 2 of Section 6:");
 	sec14 = stringReader.nextLine();
 	if (sec14.equals("quit")){
 	    System.exit(0);
 	}
-	System.out.println("Do you want to play your sections? Please type 'yes' or 'no'");
+	System.out.println("Do you want to play your intro, as well as all of your sections? Please type 'yes' or 'no'");
 	play = stringReader.nextLine();
 	if (play.equalsIgnoreCase("yes")){
 	    System.out.println("Intro: " + Intro + "\n" + "Section 1: " + sec1 + "\n" + "Section 2: " + sec2 + "\n" + "Section 3: " + sec3 + "\n" + "Section 4: " + sec4 + "\n" + "Section 5: " + sec5 + "\n" + "Section 6: " + sec6 + "\n" + "Section 7: " + sec7 + "\n" + "Section 8: " + sec8 + "\n" + "Section 9: " + sec9 + "\n" + "Section 10: " + sec10 + "\n" + "Section 11: " + sec11 + "\n" + "Section 12: " + sec12 + "\n" + "Section 13: " + sec13 + "\n" + "Section 14: " + sec14);
 	}
+    }
+    public void setEnding(){
+	System.out.println("How do you want your story to end based on your previous sections?");
+	ending=stringReader.nextLine();//set ending to what the user typed in
+    }
+    public void getEnding(){
+	System.out.println("Ending:"+ this.ending);
+    }
+  
+    public String getFileSave(){
+	return fileSave;
+    }
+    public void getOptions(){
+	System.out.println(">>>>Option 1:" + this.one);
+	System.out.println(">>>>Option 2:" + this.two);
+
+    }
+    public static void main(String[] args){
+	Story example = new Story();
+	System.out.println(example);
     }
 }
