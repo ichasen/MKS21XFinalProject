@@ -12,23 +12,16 @@ public class Main{
       Story writing = new Story();
     }
     if (run.equalsIgnoreCase("read")){
-      try{
-        FileReader fr = new FileReader("out.txt");
-        BufferedReader br = new BufferedReader(fr);
-
-        String str;
-        while ((str=br.readLine()) != null){
-          out.println(str+"\n");
-        }
-        br.close();
-      }catch (IOException e){
-        out.println("File not found");
-      }
+	Reading r = new Reading();
+	r.openFile();
+	r.readFile();
+	r.closeFile();
     }
     if (run.equalsIgnoreCase("play")){
-	Story play = new Story();
-	play.getSections();
-	
+	Reading r = new Reading();
+	r.openFile();
+	r.readFile();
+	r.closeFile();
     }
   }
   public static void main(String[] args){
