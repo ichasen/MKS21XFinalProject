@@ -46,7 +46,6 @@ public class Story{
 	setOptions(13);
 	Section14();
 	setOptions(14);
-	log("\nIntro:"+Intro + "\nSection 1:" +sec1 + "\nSection 2:"+sec2 + "\n Section 3:"+sec3+"\nSection 4:"+sec4+ "\nSection 5:"+sec5+"\nSection 6:"+sec6+"\nSection 7:"+sec7+"\nSection 8:"+sec8+"\nSection 9:"+sec9+"\nSection 10:"+sec10+"\nSection11:"+sec11+"\nSection12:"+sec12 + "\nSection13:"+sec13 + "\nSection14:"+sec14 );
 	getSections();
 
     }
@@ -56,6 +55,7 @@ public class Story{
 	askyesno = stringReader.nextLine();
 	if (askyesno.equals("yes")){
 	    System.out.println(Intro);
+	    
 	    System.out.println(selectOptions(0));
 	    if (run.equals("one")){
 		System.out.println(selectOptions(1));
@@ -84,6 +84,7 @@ public class Story{
 	System.out.println("How do you want to begin your story?: ");
 	Intro=stringReader.nextLine();//set intro that what the user typed in
 	System.out.println ("\nYou will  have 2  options for each section to decide how your story will continue.");
+	log("\nIntro:"+Intro);
     }
 
     public String selectOptions(int section){
@@ -151,16 +152,6 @@ public class Story{
 	}
 	return "Please type a valid option!";
     }
-    public void log(String message){
-	try{
-	    PrintWriter outputfile = new PrintWriter(new FileWriter("out.txt",false),true);
-	    outputfile.write(message + "\n");
-	    outputfile.close();
-	}catch (IOException e){
-	    e.printStackTrace();
-	}
-	    
-    }
     
     public String setOptions(int sect){
 	String ans = "";
@@ -213,9 +204,11 @@ public class Story{
 	    System.out.println("\nPlease enter in option 1");
 	    one = stringReader.nextLine();
 	    System.out.println(">Option 1:" + one);
+	    log(">Option 1:" + one);
 	    System.out.println("\nPlease enter in option 2");
 	    two = stringReader.nextLine();
 	    System.out.println(">Option 2:" + two);
+	    log(">Option 2:" + two);
 	    System.out.println("\n" + ans + "Options:");
 	    getOptions();
 	}
@@ -223,11 +216,13 @@ public class Story{
 	    System.out.println("\nPlease enter in option 1");
 	    one = stringReader.nextLine();
 	    System.out.println(">Option 1: " + one);
+	    log(">Option 1:" + one);
 	    setEnding();
 	    getEnding();
 	    System.out.println("\nPlease enter in option 2");
 	    two = stringReader.nextLine();
 	    System.out.println(">Option 2: " + two);
+	    log(">Option 2:" + two);
 	    System.out.println("\n" + ans + "Options:");
 	    getOptions();
 	    setEnding();
@@ -241,6 +236,7 @@ public class Story{
     public void Section1(){
 	System.out.println("\nSection 1:Now enter the story for this section based on option 1 of your intro. You may quit at any time by typing 'quit', although your sections will not be saved: ");
 	sec1 = stringReader.nextLine();
+	log("\nSection 1:" + sec1);
 	if (sec1.equals("quit")){
 	    System.exit(0);
 	}
@@ -256,6 +252,7 @@ public class Story{
     public void Section2(){
 	System.out.println("\nSection 2:Now enter the alternative to Section 1, based on option 2 of your intro: ");
 	sec2 = stringReader.nextLine();
+	log("\nSection 2:" + sec2);
 	if (sec2.equals("quit")){
 	    System.exit(0);
 	}
@@ -271,6 +268,7 @@ public class Story{
     public void Section3(){
 	System.out.println("\nSection 3:Enter the story for this section based on option 1 of Section 1: ");
 	sec3 = stringReader.nextLine();
+	log("\nSection 3:" + sec3);
 	if (sec3.equals("quit")){
 	    System.exit(0);
 	}
@@ -286,6 +284,7 @@ public class Story{
     public void Section4(){
 	System.out.println("\nSection 4: Enter the alternative to Section 3, based on option 2 of Section 1:");
 	sec4 = stringReader.nextLine();
+	log("\nSection 4:" + sec4);
 	if (sec4.equals("quit")){
 	    System.exit(0);
 	}
@@ -302,6 +301,7 @@ public class Story{
     public void Section5(){
 	System.out.println("\nSection 5:Enter the story for this section based on option 1 of Section 2:");
 	sec5 = stringReader.nextLine();
+	log("\nSection 5:" + sec5);
 	if (sec5.equals("quit")){
 	    System.exit(0);
 	}
@@ -318,6 +318,7 @@ public class Story{
     public void Section6(){
 	System.out.println("\nSection 6:Now enter the alternative to Section 5, based on option 2 of Section 2:");
 	sec6 = stringReader.nextLine();
+	log("\nSection 6:" + sec6);
 	if (sec6.equals("quit")){
 	    System.exit(0);
 	}
@@ -334,6 +335,7 @@ public class Story{
     public void Section7(){
 	System.out.println("\nSection 7:Enter the story for this section based on option 1 of Section 3:");
 	sec7 = stringReader.nextLine();
+	log("\nSection 7:" + sec7);
 	if (sec7.equals("quit")){
 	    System.exit(0);
 	}
@@ -350,6 +352,7 @@ public class Story{
     public void Section8(){
 	System.out.println("\nSection 8:Enter the alternative to Section 7, based on option 2 of Section 3:");
 	sec8 = stringReader.nextLine();
+	log("\nSection 8:"+sec8);
 	if (sec8.equals("quit")){
 	    System.exit(0);
 	}
@@ -366,6 +369,7 @@ public class Story{
     public void Section9(){
 	System.out.println("\nSection 9:Enter the story for this section based on option 1 of Section 4:");
 	sec9 = stringReader.nextLine();
+	log("\nSection 9:" + sec9);
 	if (sec9.equals("quit")){
 	    System.exit(0);
 	}
@@ -382,6 +386,7 @@ public class Story{
     public void Section10(){
 	System.out.println("\nSection 10:Enter the alternative to Section 9, based on option 2 of Section 4:");
 	sec10 = stringReader.nextLine();
+	log("\nSection 10:" + sec10);
 	if (sec10.equals("quit")){
 	    System.exit(0);
 	}
@@ -398,6 +403,7 @@ public class Story{
     public void Section11(){
 	System.out.println("\nSection 11:Enter the story for this section based on option 1 of Section 5:");
 	sec11 = stringReader.nextLine();
+	log("\nSection 11:" + sec11);
 	if (sec11.equals("quit")){
 	    System.exit(0);
 	}
@@ -414,6 +420,7 @@ public class Story{
     public void Section12(){
 	System.out.println("\nSection 12:Enter the alternative to Section 11, based on option 2 of Section 5:");
 	sec12 = stringReader.nextLine();
+	log("\nSection 12:" + sec12);
 	if (sec12.equals("quit")){
 	    System.exit(0);
 	}
@@ -430,6 +437,7 @@ public class Story{
     public void Section13(){
 	System.out.println("\nSection 13:Enter the story for this section based on option 1 of Section 6:");
 	sec13 = stringReader.nextLine();
+	log("\nSection 13:"+sec13);
 	if (sec13.equals("quit")){
 	    System.exit(0);
 	}
@@ -446,6 +454,7 @@ public class Story{
     public void Section14(){
 	System.out.println("\nSection 14:Enter the alternative to Section 13 based on option 2 of Section 6:");
 	sec14 = stringReader.nextLine();
+	log("\nSection 14:" + sec14);
 	if (sec14.equals("quit")){
 	    System.exit(0);
 	}
@@ -462,13 +471,10 @@ public class Story{
     public void setEnding(){
 	System.out.println("How do you want your story to end based on your previous sections?");
 	ending=stringReader.nextLine();//set ending to what the user typed in
+	log("Ending:"+ending);
     }
     public void getEnding(){
 	System.out.println("Ending:"+ this.ending);
-    }
-  
-    public String getFileSave(){
-	return fileSave;
     }
     public void getOptions(){
 	System.out.println(">>>>Option 1:" + this.one);
@@ -478,5 +484,14 @@ public class Story{
     public static void main(String[] args){
 	Story example = new Story();
 	System.out.println(example);
+    }
+    public void log(String message){
+	try{
+	    PrintWriter outputfile = new PrintWriter(new FileWriter("out.txt",true),true);
+	    outputfile.write(message + "\n");
+	    outputfile.close();
+	}catch (IOException e){
+	    e.printStackTrace();
+	}	
     }
 }

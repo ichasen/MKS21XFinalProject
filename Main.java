@@ -26,16 +26,9 @@ public class Main{
       }
     }
     if (run.equalsIgnoreCase("play")){
-      try{
-        File file = new File("test.txt");
-        FileWriter fw = new FileWriter(file);
-        PrintWriter pw =new PrintWriter(fw);
-        pw.println();
-        pw.close();
-      }catch (IOException e){
-        out.println("dsadas");
-      }
-      
+	Story play = new Story();
+	play.getSections();
+	
     }
   }
   public static void main(String[] args){
